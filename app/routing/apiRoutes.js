@@ -34,14 +34,15 @@ module.exports = function(app) {
         var userPhoto = userData.photo;
         var userScores = userData.scores;
         console.log(userScores);
-        // var scoreInteger = parseInt(userScores);
-        console.log(scoreInteger);
+        
+        
 
-        var totalDifference = 0;
+        
 
         for (var i = 0; i < friends.length; i++) {
             console.log("friend: " + friends[i].name);
             // This above console log will list all of the friends in the friends array
+            var totalDifference = 0;
 
            
             for (var j = 0; j < friends[i].scores[j]; j++) {
